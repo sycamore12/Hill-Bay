@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: #161618;
+    color: white;
+}
+
+/* Home */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.search-bar {
+    font-family: 'Montserrat';
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.top-menu {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw ;
+    transition: 1s;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close svg {
+    width: 30px;
+}
+
+nav .ul-pc ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .ul-pc ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #FFB1B1;
+}
+
+.icons i {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 25px;  
+    height: auto; 
+}
+
+/* login */
+.modal-box{
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    padding: 50px 0px;
+    margin-left: -850px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+img.login-logo{
+    width: 100px;
+    margin-left: 200px;
+    
+}
+
+.login-form{
+    color: black;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-form div{
+    margin-bottom: 15px;
+}
+
+.login-form label{
+    display: block;
+}
+
+.login-form input{
+    width: 100%;
+    line-height: 2;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form button{
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.close-modal-btn{
+    color: black;
+     font-size: 30px;
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     text-decoration: none;
+}
+
+.google-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-btn img{
+    width: 50px;
+}
+
+/* favorite */
+
+.like-top {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.like-top img{
+    width: 40px;
+}
+
+/* product */
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1 {
+    flex: 0;
+    margin: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 290px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-body{
+    padding: 5px;
+}
+
+.card-img {
+    width: 290px;
+    height: 290px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-title {
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-text-discount{
+    color: black;
+    display: flex;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.card-text {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.card-text img {
+    width: 25px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.card img:hover {
+    transform: scale(1.1) ;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+.sidebar {
+    padding: 15px;
+}
+
+.sidebar ul {
+    display: flex; 
+    list-style-type: none; 
+    padding: 10px;
+    justify-content: center; 
+}
+
+.sidebar li {
+    margin: 0 25px; 
+}
+
+.sidebar a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.sidebar a:hover {
+    color: #FFB1B1;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* responsif */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .logo img{
+        width: 110px;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        margin: 10px;
+    }
+
+    nav .searchbar{
+        padding: 10px;
+    }
+
+    nav .ul-pc ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        display: none;
+    }
+
+    li.batas{
+        display: none;
+    }
+
+    nav .icons{
+        padding: 25px;
+    }
+
+    .hamburger{
+        display: inline;
+      }
+
+    .modal-box{
+    width: 330px;
+    height: auto;
+    padding: 10px 0px;
+    margin-left: -80px;
+    margin-top: -70px;
+    background-color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    }
+    
+    img.login-logo{
+        width: 60px;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .login-form{
+        color: black;
+        width: 290px;
+    }
+    
+    .login-form div{
+        margin-bottom: 15px;
+    }
+    
+    .login-form label{
+        display: block;
+    }
+    
+    .login-form input{
+        width: 100%;
+        line-height: 2;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    
+    .login-form button{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .close-modal-btn{
+        color: black;
+         font-size: 30px;
+         position: absolute;
+         right: 10px;
+         top: 10px;
+         text-decoration: none;
+    }
+
+    .like-top{
+        margin-left: 50px;
+    }
+
+    .like-top img{
+        width: 30px;
+    }
+
+    .like-top h1{
+        font-size: 25px;
+    }
+
+    .container-product{
+        display: block;
+        margin-left: 28px;
+    }
+
+    
+}

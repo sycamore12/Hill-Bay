@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Bay - Clothing</title>
+    <link rel="stylesheet" href="../css/bagCSS.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/HillBayLogo.svg" alt="">
+            </div>
+
+            <div class="searchbar">
+                <input type="text" placeholder="Search" class="search-bar">
+            </div>
+
+            <div class="ul-pc">
+                <ul>
+                    <li><a href="../index.html">ABOUT</a></li>
+                    <li class="batas">|</li>
+                    <li><a href="../products/index.html">PRODUCTS</a></li>
+                    <li class="batas">|</li>
+                    <li><a href="../index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="top-menu" >
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+               
+                <div class="ul-handphone">
+                    <ul>
+                        <li><a href="../index.html">ABOUT</a></li>
+                        <li class="batas">|</li>
+                        <li><a href="../products/index.html">PRODUCTS</a></li>
+                        <li class="batas">|</li>
+                        <li><a href="../index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="icons">
+                <i class="like">
+                    <a href="../favorites/index.html"><img src="../assets/like.png" alt=""></a>
+                    </i>
+                    <i class="cart">
+                        <a href="./index.html"><img src="../assets/cart.png" alt=""></a>
+                    </i>
+                <i class="user">    
+                    <img onclick="showModal()" src="../assets/profile.png" alt="">
+
+                    <div class="modal-box" id="modal-box" >
+
+                        <img class="login-logo" src="../assets/hillbay logo grey.png" alt="">
+
+                        <a href="#" class="close-modal-btn" onclick="closeModal()">X</a>
+            
+                      <form action="#" class="login-form">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="usernmae">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div>
+                            <button>Login</button>
+                        </div>
+                        <div class="google-btn">
+                            <img src="../assets/Google Button.png" alt="">
+                        </div>
+                      </form>  
+                    </div>
+
+                </i>
+                <i class="hamburger">
+                    <img src="../assets/Hamburger Icon.png" alt="">
+                </i>
+            </div> 
+        </nav>
+    </header>
+
+    <div class="cart-top">
+        <img src="../assets/cart border pink.png" alt="">
+        <h1>Bag</h1>
+    </div>
+
+    <div class="container-product">
+        <div class="column1">
+            <div class="card">
+                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Greatness Tee</h2>
+                    <p class="card-text-discount">Rp. 150.000</p>
+                    <p class="card-text">Rp. 110.000
+                        <p class="counter"> (1) </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column1">
+            <div class="card">
+                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Butterfly Tee</h2>
+                    <p class="card-text-discount">Rp. 150.000</p>
+                    <p class="card-text">Rp. 110.000
+                        <p class="counter"> (2) </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column1">
+            <div class="card">
+                <img src="../assets/GreatnessBeigeTee.png" alt="Card Image" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Greatness Tee</h2>
+                    <p class="card-text-discount">Rp. 150.000</p>
+                    <p class="card-text">Rp. 110.000
+                        <p class="counter"> (1) </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column1">
+            <div class="card">
+                <img src="../assets/GreatnessBlackTee.png" alt="Card Image" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Butterfly Tee</h2>
+                    <p class="card-text-discount">Rp. 150.000</p>
+                    <p class="card-text">Rp. 110.000
+                        <p class="counter"> (5) </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="container-sidebar">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    
+        <footer>
+            <p>&copy; 2024 Hill Bay. All rights reserved.</p>
+        </footer>
+
+
+
+        
+        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    
+  </body>
+  
+</html>
